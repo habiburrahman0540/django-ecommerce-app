@@ -8,5 +8,11 @@
 </head>
 <body>
     <p>Habib</p>
+    {% for customer in customers %}
+    <li>{{customer.first_name}} {{customer.last_name}}</li>
+    <li>{{customer.email}}</li>
+    <li>{{customer.membership}}</li>
+    <li>{{customer.id}}</li>
+    {% endfor %}
 </body>
 </html>
